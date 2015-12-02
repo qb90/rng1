@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from part1 import generate
 
 
 def main():
@@ -9,7 +10,7 @@ def main():
     print("Wyswietl : ")
     odp = int(input())
     if odp == 1:
-        random()
+        generate()
     else:
         print("Nie rozumiem")
     print()

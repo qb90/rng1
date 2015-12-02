@@ -3,7 +3,7 @@
 from random import randrange
 
 
-def random():
+def generate():
     for j in range(10):
         rnd = randrange(1000)
         print('Wygenerowano :', rnd)
