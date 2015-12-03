@@ -39,5 +39,5 @@ def drawimage():
         del p
         del c
         del tmp
-    print()
+        print()
     print()
