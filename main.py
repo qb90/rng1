@@ -1,18 +1,22 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from part1 import generate
+from maps import drawimage
 
 
 def main():
     print("""\
-        1 - randomowe liczby
+        1 - Several randoms
+        2 - 50px x 50px maps
     """)
-    print("Wyswietl : ")
+    print("Print : ")
     odp = int(input())
     if odp == 1:
         generate()
+    elif odp == 1:
+        drawimage()
     else:
-        print("Nie rozumiem")
+        print("Not found")
     print()
 
 
