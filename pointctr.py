@@ -12,7 +12,7 @@ def count(p):
         else:
             e.append(p[i])
     le = len(e)
-    print('| points :', le)
+    print('repeated points :', le)
     pt = 2500 - le
     del e
     return pt
