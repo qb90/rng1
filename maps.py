@@ -8,16 +8,16 @@ from colorchk import check
 
 
 def drawimage():
-    for u in range(100):
+    for u in range(10):  #the amount of maps ( 1 map ~ )
         tmp = []
-        for j in range(2500):
+        for j in range(2500):  #50px x 50px = 2500px
             x = 0
             tmp.append(x)
         c = []
         p = []
         im = Image.new(mode="RGB", size=(50, 50), color=(0, 0, 0))
         draw = ImageDraw.Draw(im)
-        for i in range(15000):
+        for i in range(15000):  #2500px x 6 = 15000px
             r = g = b = 255
             x = randrange(50)
             y = randrange(50)
