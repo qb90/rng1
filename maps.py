@@ -4,6 +4,7 @@ from PIL import Image, ImageDraw
 from random import randrange
 import datetime
 from pointctr import count
+from colorchk import check
 
 
 def drawimage():
@@ -21,11 +22,11 @@ def drawimage():
             x = randrange(50)
             y = randrange(50)
             xy = (x, y)
-            #ch = check(c, tmp, xy)
-            #if ch <= 9:
-            #    r = 255 - ch*30
-            #elif ch > 9:
-            #    g = 255 - ch*30
+            ch = check(c, tmp, xy)
+            if ch <= 9:
+                r = 255 - ch*30
+            elif ch > 9:
+                g = 255 - ch*30
             draw.point(xy=[xy], fill=(r, g, b))
             p.append(xy)
         score = count(p)

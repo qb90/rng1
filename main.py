@@ -13,7 +13,7 @@ def main():
     odp = int(input())
     if odp == 1:
         generate()
-    elif odp == 1:
+    elif odp == 2:
         drawimage()
     else:
         print("Not found")
